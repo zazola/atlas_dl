@@ -1,0 +1,11 @@
+## From http://portal.nersc.gov/project/mpccc/wbhimji/RPVSusyData/ download:
+README
+all_data_merged.h5
+all_data_merged_withjetvars.h5
+large_testset.h5
+test.h5
+test_withjetvars.h5
+train.h5
+train_withjetvars.h5
+val.h
+val_withjetvars.h5

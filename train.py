@@ -130,7 +130,8 @@ if __name__ == '__main__':
                       callbacks = [
                         EarlyStopping(verbose=True, patience=20, monitor='val_loss'),
                         ModelCheckpoint(model_weights,
-                            monitor='val_loss', verbose=True, save_best_only=True)
+                            monitor='val_loss', verbose=True, save_best_only=True),
+			EarlyStopping(verbose=True, patience=2, monitor='acc',mode="max")
                       ],
                       validation_data=(images_val, labels_val, weights_val)
             )
